@@ -1,6 +1,5 @@
 import { Autocomplete } from "./components/Autocomplete/Autocomplete";
 import { getOptions } from "./services/searchService";
-import githubLogo from "./assets/github.svg";
 import { Background } from "./components/Background/Background";
 
 function App() {
