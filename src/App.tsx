@@ -8,7 +8,7 @@ function App() {
       <Background />
 
       <div className="flex flex-col gap-5">
-        <img src="/github.svg" alt="github logo" className="h-32" />
+        <img src="./github.svg" alt="github logo" className="h-32" />
         <div className="text-2xl font-medium text-center px-2">
           GitHub users & repositories autocomplete search
         </div>
