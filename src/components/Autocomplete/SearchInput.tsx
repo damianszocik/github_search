@@ -37,12 +37,14 @@ export const SearchInput = ({
         id="searchInput"
         autoComplete="off"
         autoFocus
+        data-testid="searchInput"
         ref={inputRef}
         {...inputProps}
       />
       <img
         src={loadingSpinner}
         alt="loading spinner"
+        data-testid="loadingSpinner"
         className={`${
           loading ? "opacity-100" : "opacity-0"
         } transition-opacity duration-1000 animate-spin absolute h-2/4 right-3 top-0 bottom-0 my-auto flex`}
@@ -52,6 +54,7 @@ export const SearchInput = ({
           toggleExpand();
           inputRef.current?.focus();
         }}
+        data-testid="expandButton"
       >
         <img
           src={expandIcon}

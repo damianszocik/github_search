@@ -23,7 +23,9 @@ const USERS_SERARCH_API_URL = "https://api.github.com/search/users",
   REPOSITORIES_SEARCH_API_URL = "https://api.github.com/search/repositories";
 
 const getReponseError = (rejectionReason: unknown) =>
-  axios.isAxiosError(rejectionReason) ? `: ${rejectionReason.message}` : "";
+  axios.isAxiosError(rejectionReason)
+    ? `: ${rejectionReason.response?.data.message || rejectionReason.response}`
+    : "";
 
 const search: SearchFunction = async (
   query,
