@@ -30,6 +30,7 @@ export const AutocompleteItem = ({
       onClick={onClick}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
+      data-testid="autocompleteItem"
     >
       <div className="flex items-center gap-2">
         <img

@@ -136,7 +136,10 @@ export function Autocomplete({ data }: AutocompleteProps) {
         !loading &&
         searchLengthEnough &&
         errors.map((errorMessage) => (
-          <div className="mt-4 text-sm text-red-600 mb-4 flex gap-1 items-center justify-center">
+          <div
+            key={errorMessage}
+            className="mt-4 text-sm text-red-600 mb-4 flex gap-1 items-center justify-center"
+          >
             <img src={errorIcon} alt="error icon" className="h-6 opacity-70" />
             {errorMessage}
           </div>
