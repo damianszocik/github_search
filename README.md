@@ -12,3 +12,6 @@ To build the project, execute: `npm run build`
 
 # Running app
 Running previously build project can be done with `npm preview` command.
+
+# Testing
+To run e2e test in the CLI use `cypress:run` command. `npm cypress:open` can be used to run Cypress GUI. Note, that app should be running on `http://127.0.0.1:5173/` to perform e2e tests. Easiest way to do that is running `npm run dev` prior to running tests.
